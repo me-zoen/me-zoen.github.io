@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clicker Game</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        #clickImage {
-            cursor: pointer;
-            width: 200px; /* Adjust size as needed */
-            height: auto;
-        }
-        #score {
-            margin-top: 20px;
-            font-size: 24px;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Clicker Game</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .container {
+    position: relative;
+    display: inline-block;
+  }
+  #clickImage {
+    width: 200px;
+    height: auto;
+    display: block;
+  }
+  #clickButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  #score {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+</style>
 </head>
 <body>
-    <!-- Replace the button with an image -->
-    <img id="clickImage" src="gay.webp" alt="Click Me" />
-    <div id="score">Score: 0</div>
+<div class="container">
+  <img id="clickImage" src="gay.webp" alt="Click Me" />
+  <button id="clickButton"></button>
+</div>
+<div id="score">Score: 0</div>
 
-    <script src="game.js"></script>
+<script src="game.js"></script>
 </body>
 </html>
