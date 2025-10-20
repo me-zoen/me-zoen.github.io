@@ -1,9 +1,9 @@
 let score = 0;
 
-const image = document.getElementById('clickImage');
+const button = document.getElementById('clickButton');
 const scoreDisplay = document.getElementById('score');
 
-image.addEventListener('click', () => {
+button.addEventListener('click', () => {
     score += 1;
     scoreDisplay.textContent = 'Score: ' + score;
 });
